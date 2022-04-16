@@ -1,0 +1,359 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: var(--cor-primaria);
+}
+
+/* CABECALHO */
+.cabecalho {
+    background-color: var(--cor-primaria);
+    color: var(--cor-padrao);
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cabecalho .titulo h1 {
+    font-size: 2.5rem;
+}
+
+.cabecalho .titulo span {
+    font-size: 1.6rem;
+}
+
+.cabecalho nav .menu {
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cabecalho nav .menu li {
+    margin-left: 30px;
+}
+
+.cabecalho nav .menu li a {
+    color: var(--cor-padrao);
+    transition: 0.3s ease-in-out;
+    font-weight: 700;
+}
+
+.cabecalho nav .menu li a:hover {
+    background-color: var(--cor-secundaria);
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+/* MAIN APRESENTACAO*/
+.principal .apresentacao {
+    margin-top: 100px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-padrao);
+}
+
+.principal .apresentacao .conteudo-apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.principal .apresentacao .nome h2 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.principal .apresentacao .nome span {
+    font-size: 1.6rem;
+}
+
+.principal .apresentacao .conteudo-apresentacao .social {
+    width: 130px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social i {
+    font-size: 2rem;
+    transition: 0.3s ease-in-out;
+}
+
+.social a {
+    color: var(--cor-padrao);
+}
+
+.social a:hover {
+    color: var(--cor-secundaria);
+}
+
+.principal .apresentacao .foto-perfil img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+/* MAIN SOBRE-MIM*/
+.principal .sobre-mim {
+    color: var(--cor-padrao);
+    margin: 100px 0;
+}
+
+.principal .sobre-mim h2 {
+    color: var(--cor-padrao);
+    text-align: center;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.principal .sobre-mim .conteudo-sobre-mim {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.principal .sobre-mim .conteudo-sobre-mim .texto-sobre-mim {
+    max-width: 400px;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.principal .sobre-mim .conteudo-sobre-mim .texto-sobre-mim .botao-curriculo {
+    background-color: var(--cor-secundaria);
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: var(--cor-padrao);
+    transition: 0.3s ease-in-out;
+    font-weight: 700;
+}
+
+.principal .sobre-mim .conteudo-sobre-mim .texto-sobre-mim .botao-curriculo:hover {
+    background-color: var(--cor-padrao);
+    color: var(--cor-secundaria);
+}
+
+/* PRINCIPAL HABILIDADES */
+.principal .habilidades {
+    color: var(--cor-padrao);
+    margin: 100px 0;
+}
+
+.principal .habilidades h2 {
+    color: var(--cor-padrao);
+    text-align: center;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.principal .habilidades .conteudo-habilidades .imagem-skill {
+    width: 200px;
+    background-color: var(--cor-padrao);
+    padding: 5px;
+}
+
+.principal .habilidades .conteudo-habilidades .html, .css, .js, .git, .github {
+    width: 210px;
+    margin: 15px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    padding: 5px;
+}
+
+.principal .habilidades .conteudo-habilidades .html:hover, .css:hover, .js:hover, .git:hover, .github:hover {
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.418);
+}
+
+.principal .habilidades .conteudo-habilidades {
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.principal .habilidades .conteudo-habilidades h3 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.principal .habilidades .conteudo-habilidades p {
+    font-size: 1.2rem;
+}
+
+/* PRINCIPAL PROJETOS */
+.principal .projetos {
+    color: var(--cor-padrao);
+    margin: 100px 0;
+}
+
+.principal .projetos h2 {
+    color: var(--cor-padrao);
+    text-align: center;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.principal .projetos .conteudo-projetos {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.principal .projetos .conteudo-projetos .projeto1, .projeto2, .projeto3, .projeto4 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+}
+
+.principal .projetos .conteudo-projetos .projeto1 {
+    background-image: url('../imagens/projeto1.jpg');
+    transition: 0.2s ease-in-out;
+}
+
+.principal .projetos .conteudo-projetos .projeto2 {
+    background-image: url('../imagens/projeto2.jpg');
+    transition: 0.2s ease-in-out;
+    
+}
+
+.principal .projetos .conteudo-projetos .projeto3 {
+    background-image: url('../imagens/projeto3.jpg');
+    transition: 0.2s ease-in-out;
+    
+}
+
+.principal .projetos .conteudo-projetos .projeto4 {
+    background-image: url('../imagens/projeto4.jpg');
+    transition: 0.2s ease-in-out;
+    
+}
+
+.principal .projetos .conteudo-projetos .projeto1:hover, .projeto2:hover, .projeto3:hover, .projeto4:hover {
+    transform: scale(1.1);
+    filter: brightness(60%);
+}
+
+/* RODAPE */
+.rodape {
+    background-color: var(--cor-primaria);
+    min-height: 80px;
+    text-align: center;
+}
+
+.rodape .conteudo-rodape {
+    color: var(--cor-padrao);
+    font-size: 1.6rem;
+}
+
+.rodape .conteudo-rodape a {
+    color: var(--cor-secundaria);
+}
+
+.rodape .conteudo-rodape a:hover {
+    text-decoration: underline;
+}
+
+.rodape .social {
+    margin: 30px;
+}
+
+.rodape .social i {
+    font-size: 2rem;
+    transition: 0.3s ease-in-out;
+}
+
+.rodape .social a {
+    color: var(--cor-padrao);
+    margin: 10px;
+}
+
+.rodape .social a:hover {
+    color: var(--cor-secundaria);
+}
+
+@media (max-width: 425px) {
+
+    .principal .apresentacao {
+        margin-top: 20px;
+    }
+
+    .principal .apresentacao .conteudo-apresentacao .nome h2 {
+        font-size: 2rem;
+    }
+
+    .principal .apresentacao .conteudo-apresentacao .foto-perfil img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .principal .sobre-mim .conteudo-sobre-mim img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 900px) {
+    .cabecalho {
+        text-align: center;
+        display: block;
+        flex-wrap: wrap;
+    }
+
+    .cabecalho .titulo {
+        margin: 20px 0;
+    }
+
+    .cabecalho nav .menu {
+        display: block;
+    }
+
+    .cabecalho nav .menu li {
+        margin: 30px 0;
+    }
+
+    .principal .apresentacao .conteudo-apresentacao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .principal .apresentacao .conteudo-apresentacao .social {
+        margin: 20px auto;
+    }
+
+    .principal .apresentacao .foto-perfil img {
+        margin-top: 30px;
+    }
+
+    .principal .sobre-mim .conteudo-sobre-mim {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .principal .sobre-mim .conteudo-sobre-mim .texto-sobre-mim {
+        max-width: 350px;
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-top: 30px;
+    }
+}

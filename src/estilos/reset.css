@@ -1,0 +1,14 @@
+:root {
+    --fonte-padrao: monospace, sans-serif;
+    --cor-primaria: #1A1A1A;
+    --cor-secundaria: #1580C9;
+    --cor-padrao: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
