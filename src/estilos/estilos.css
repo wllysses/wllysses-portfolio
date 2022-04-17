@@ -17,7 +17,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .cabecalho .titulo h1 {
@@ -28,24 +27,23 @@ body {
     font-size: 1.6rem;
 }
 
-.cabecalho nav .menu {
+.cabecalho nav ul {
     font-size: 1.6rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
 }
 
-.cabecalho nav .menu li {
+.cabecalho nav ul li {
     margin-left: 30px;
 }
 
-.cabecalho nav .menu li a {
+.cabecalho nav ul li a {
     color: var(--cor-padrao);
     transition: 0.3s ease-in-out;
     font-weight: 700;
 }
 
-.cabecalho nav .menu li a:hover {
+.cabecalho nav ul li a:hover {
     background-color: var(--cor-secundaria);
     padding: 10px 20px;
     border-radius: 30px;
@@ -225,6 +223,7 @@ body {
     width: 200px;
     height: 300px;
     margin: 10px;
+    border-radius: 5px;
 }
 
 .principal .projetos .conteudo-projetos .projeto1 {
@@ -324,11 +323,11 @@ body {
         margin: 20px 0;
     }
 
-    .cabecalho nav .menu {
+    .cabecalho nav ul {
         display: block;
     }
 
-    .cabecalho nav .menu li {
+    .cabecalho nav ul li {
         margin: 30px 0;
     }
 

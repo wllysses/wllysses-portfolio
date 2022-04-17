@@ -8,7 +8,9 @@
     <meta name="description" content="Portfólio - Wllysses Tavares Paz Júnior | Dev Front-end">
     <link rel="stylesheet" href="./src/estilos/reset.css">
     <link rel="stylesheet" href="./src/estilos/estilos.css">
+    <link rel="stylesheet" href="./src/estilos/menu.css">
     <link rel="stylesheet" href="./src/estilos/all.min.css">
+    <link rel="shortcut icon" href="./src/imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header class="cabecalho">
@@ -17,8 +19,15 @@
             <span>Dev Front-end</span>
         </div>
 
-        <nav>
-            <ul class="menu">
+        <nav> <!--MENU HAMBURGUER-->
+            <input type="checkbox" name="menu-hamburguer" id="menu-hamburguer">
+
+            <label for="menu-hamburguer">
+                <div class="menu">
+                    <span class="hamburguer"></span>
+                </div>
+            </label>
+            <ul>
                 <li><a href="#sobre-mim">Sobre mim</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#projetos">Projetos</a></li>
