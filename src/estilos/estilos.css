@@ -1,5 +1,6 @@
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -207,51 +208,71 @@ body {
     margin-bottom: 50px;
 }
 
-.principal .projetos .conteudo-projetos {
+.principal .projetos .painel-projetos {
     max-width: 1000px;
     margin: 0 auto;
+    height: 450px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s ease-in-out;
 }
 
-.principal .projetos .conteudo-projetos .projeto1, .projeto2, .projeto3, .projeto4 {
-    background-repeat: no-repeat;
+.principal .painel-projetos .conteudo-projetos {
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    width: 200px;
-    height: 300px;
-    margin: 10px;
-    border-radius: 5px;
+    min-width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
 }
 
-.principal .projetos .conteudo-projetos .projeto1 {
+.principal .painel-projetos .conteudo-projetos.mostrar {
+    opacity: 1;
+}
+
+.principal .conteudo-projetos.projeto1 {
     background-image: url('../imagens/projeto1.jpg');
     transition: 0.2s ease-in-out;
 }
 
-.principal .projetos .conteudo-projetos .projeto2 {
-    background-image: url('../imagens/projeto2.jpg');
-    transition: 0.2s ease-in-out;
-    
+.principal .conteudo-projetos.projeto2 {
+    background-image: url('../imagens/projeto2.jpg');    
 }
 
-.principal .projetos .conteudo-projetos .projeto3 {
+.principal .conteudo-projetos.projeto3 {
     background-image: url('../imagens/projeto3.jpg');
-    transition: 0.2s ease-in-out;
-    
 }
 
-.principal .projetos .conteudo-projetos .projeto4 {
-    background-image: url('../imagens/projeto4.jpg');
-    transition: 0.2s ease-in-out;
-    
+.principal .conteudo-projetos.projeto4 {
+    background-image: url('../imagens/projeto4.jpg'); 
 }
 
-.principal .projetos .conteudo-projetos .projeto1:hover, .projeto2:hover, .projeto3:hover, .projeto4:hover {
-    transform: scale(1.1);
-    filter: brightness(60%);
+.painel-projetos .seta {
+    background-image: url('../imagens/seta.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+
+    /* ESCONDER O TEXTO DO HTML */
+    text-indent: 100%;
+    overflow: hidden;
+}
+
+.painel-projetos .seta.btn-voltar {
+    left: 20px;
+    transform: rotateY(180deg);
+}
+
+.painel-projetos .seta.btn-avancar {
+    right: 20px;
 }
 
 /* RODAPE */
