@@ -241,7 +241,6 @@ body {
 
 .principal .conteudo-projetos.projeto1 {
     background-image: url('../imagens/projeto1.jpg');
-    transition: 0.2s ease-in-out;
 }
 
 .principal .conteudo-projetos.projeto2 {
@@ -330,10 +329,6 @@ body {
         width: 200px;
         height: 200px;
     }
-
-    .principal .sobre-mim .conteudo-sobre-mim img {
-        width: 200px;
-    }
 }
 
 @media (max-width: 900px) {
@@ -365,7 +360,7 @@ body {
     }
 
     .principal .apresentacao .foto-perfil img {
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     .principal .sobre-mim .conteudo-sobre-mim {
