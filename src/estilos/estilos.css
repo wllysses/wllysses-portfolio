@@ -198,6 +198,7 @@ body {
 .principal .projetos {
     color: var(--cor-padrao);
     margin: 100px 0;
+    padding: 0 15px;
 }
 
 .principal .projetos h2 {
