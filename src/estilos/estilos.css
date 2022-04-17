@@ -332,11 +332,6 @@ body {
 }
 
 @media (max-width: 900px) {
-    .cabecalho {
-        text-align: center;
-        display: block;
-        flex-wrap: wrap;
-    }
 
     .cabecalho .titulo {
         margin: 20px 0;
