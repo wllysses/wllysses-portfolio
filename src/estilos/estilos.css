@@ -125,8 +125,9 @@ body {
 }
 
 .principal .sobre-mim .conteudo-sobre-mim .texto-sobre-mim {
-    max-width: 400px;
-    font-size: 1.6rem;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -159,17 +160,18 @@ body {
 }
 
 .principal .habilidades .conteudo-habilidades .imagem-skill {
-    width: 200px;
+    width: 150px;
     background-color: var(--cor-padrao);
-    padding: 5px;
+    padding: 10px;
+    cursor: pointer;
 }
 
 .principal .habilidades .conteudo-habilidades .html, .css, .js, .git, .github {
-    width: 210px;
+    width: 220px;
     margin: 15px;
     text-align: center;
     transition: 0.3s ease-in-out;
-    padding: 5px;
+    padding: 10px;
 }
 
 .principal .habilidades .conteudo-habilidades .html:hover, .css:hover, .js:hover, .git:hover, .github:hover {
@@ -177,7 +179,7 @@ body {
 }
 
 .principal .habilidades .conteudo-habilidades {
-    max-width: 720px;
+    max-width: 750px;
     margin: 0 auto;
     display: flex;
     align-items: center;
