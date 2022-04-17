@@ -14,21 +14,23 @@ function mostrarImagem() {
     imagensPainel[imagemAtual].classList.add('mostrar')
 }
 
-setaVoltar.addEventListener('click', () => {
+setaVoltar.addEventListener('click', (event) => {
     if(imagemAtual === 0) {
         imagemAtual = 4
     }
     imagemAtual--
+    event.preventDefault();
 
     esconderImagem()
     mostrarImagem()
 })
 
-setaAvancar.addEventListener('click', () => {
+setaAvancar.addEventListener('click', (event) => {
     if(imagemAtual === totalImagens) {
         imagemAtual = -1
     }
     imagemAtual++
+    event.preventDefault();
 
     esconderImagem()
     mostrarImagem()
