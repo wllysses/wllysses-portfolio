@@ -12,12 +12,24 @@ body {
 
 /* CABECALHO */
 .cabecalho {
-    background-color: var(--cor-primaria);
+    background-color: #222222;
     color: var(--cor-padrao);
     min-height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.cabecalho .link-cabecalho {
+    color: var(--cor-padrao);
+    transition: 0.2s;
+}
+
+.cabecalho .link-cabecalho:hover {
+    color: var(--cor-secundaria);
 }
 
 .cabecalho .titulo h1 {
@@ -121,7 +133,7 @@ body {
     justify-content: space-evenly;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 50px;
+    padding: 0 50px;
 }
 
 .principal .sobre-mim .conteudo-sobre-mim .texto-sobre-mim {
