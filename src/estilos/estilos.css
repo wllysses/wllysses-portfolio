@@ -291,7 +291,7 @@ body {
 
 /* RODAPE */
 .rodape {
-    background-color: var(--cor-primaria);
+    background-color: #222222;
     min-height: 80px;
     text-align: center;
 }
@@ -299,6 +299,7 @@ body {
 .rodape .conteudo-rodape {
     color: var(--cor-padrao);
     font-size: 1.6rem;
+    padding: 10px;
 }
 
 .rodape .conteudo-rodape a {
@@ -310,7 +311,7 @@ body {
 }
 
 .rodape .social {
-    margin: 30px;
+    margin: 10px 0;
 }
 
 .rodape .social i {
