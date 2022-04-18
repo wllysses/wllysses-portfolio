@@ -229,6 +229,11 @@ body {
     justify-content: center;
     position: relative;
     transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.principal .projetos .painel-projetos:hover {
+    filter: brightness(80%);
 }
 
 .principal .painel-projetos .conteudo-projetos {
@@ -242,6 +247,16 @@ body {
     opacity: 0;
     transition: 0.3s ease-in-out;
     border-radius: 10px;
+}
+
+.principal .painel-projetos .conteudo-projetos .titulo-projeto {
+    position: absolute;
+    bottom: 0;
+    background-color: #22222275;
+    height: 30px;
+    width: 100%;
+    padding: 5px;
+    font-size: 1.4rem;
 }
 
 .principal .painel-projetos .conteudo-projetos.mostrar {

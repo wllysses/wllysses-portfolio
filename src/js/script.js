@@ -35,3 +35,8 @@ setaAvancar.addEventListener('click', (event) => {
     esconderImagem()
     mostrarImagem()
 })
+
+const projeto01 = document.getElementById('projeto1')
+projeto01.addEventListener('click', () => {
+    alert('olá')
+})
