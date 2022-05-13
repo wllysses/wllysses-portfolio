@@ -168,11 +168,9 @@ body {
     margin-bottom: 30px;
 }
 
-.principal .habilidades .conteudo-habilidades .imagem-skill {
-    width: 80px;
-    background-color: var(--cor-padrao);
-    padding: 10px;
-    cursor: pointer;
+.principal .habilidades .conteudo-habilidades i {
+    color: white;
+    font-size: 80px;
 }
 
 .principal .habilidades .conteudo-habilidades .html, .css, .js, .git, .github {
@@ -181,6 +179,7 @@ body {
     text-align: center;
     transition: 0.3s ease-in-out;
     padding: 10px;
+    cursor: pointer;
 }
 
 .principal .habilidades .conteudo-habilidades .html:hover, .css:hover, .js:hover, .git:hover, .github:hover {
